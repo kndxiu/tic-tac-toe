@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dark-mode-style.css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+</head>
+<body>
+    <div id="settings" class="settings has-tooltip">
+        <iconify-icon icon="ci:settings"></iconify-icon>
+        <div class="tooltip">SETTINGS</div>
+    </div>
+    <span class="title"><span class="text-gradient blue">TIC</span><span class="text-gradient red"> TAC </span>TOE</span>
+    <main>
+        <div class="players">
+            <div class="player" id="playerX">
+                <iconify-icon inline icon="akar-icons:cross"></iconify-icon>
+                <div class="player-score" id="scoreX">0</div>
+            </div>
+            <div class="player turn" id="playerO">
+                <iconify-icon inline icon="ph:circle-bold"></iconify-icon>
+                <div class="player-score" id="scoreO">0</div>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="space" data-index="0" data-marked="false"></div>
+            <div class="space" data-index="1" data-marked="false"></div>
+            <div class="space" data-index="2" data-marked="false"></div>
+            <div class="space" data-index="3" data-marked="false"></div>
+            <div class="space" data-index="4" data-marked="false"></div>
+            <div class="space" data-index="5" data-marked="false"></div>
+            <div class="space" data-index="6" data-marked="false"></div>
+            <div class="space" data-index="7" data-marked="false"></div>
+            <div class="space" data-index="8" data-marked="false"></div>
+        </div>
+        <div class="time-left">
+            <div class="icons">
+                <iconify-icon inline icon="mdi:timer-sand-complete" class="timer-full"></iconify-icon>
+                <iconify-icon inline icon="mdi:timer-sand" class="timer-empty"></iconify-icon>
+            </div>
+            <div class="timer" id="timerLine"></div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
